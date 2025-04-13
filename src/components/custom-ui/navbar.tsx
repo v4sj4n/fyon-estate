@@ -6,7 +6,6 @@ import { useState } from "react";
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -14,7 +13,7 @@ export const Navbar = () => {
   const activeProps = {
     className: "font-semibold text-primary",
   };
-  
+
   const activePropsTitle = {
     className: "font-extrabold",
   };
@@ -30,13 +29,12 @@ export const Navbar = () => {
             activeProps={activePropsTitle}
             activeOptions={{ exact: true }}
           >
-            <House weight="fill" className="h-5 w-5 text-primary" />{" "}
-            Fyon
+            <House weight="fill" className="h-5 w-5 text-primary" /> Fyon
           </Link>
         </div>
 
-        <button 
-          onClick={toggleMenu} 
+        <button
+          onClick={toggleMenu}
           className="flex md:hidden text-muted-foreground hover:text-foreground"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -76,7 +74,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      { isMenuOpen && (
+      {isMenuOpen && (
         <div className="md:hidden bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <Link

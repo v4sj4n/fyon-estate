@@ -1,3 +1,5 @@
+import { Handshake, Target, Users } from "@phosphor-icons/react";
+
 export const coreValues = [
     {
       icon: Target,

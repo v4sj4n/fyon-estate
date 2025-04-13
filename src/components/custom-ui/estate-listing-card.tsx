@@ -35,8 +35,8 @@ export const EstateListingCard = ({
   return (
     <Card className="overflow-hidden flex flex-col h-full border border-border rounded-2xl shadow-lg bg-background p-0 hover:shadow-xl transition-transform duration-300">
       <Link
-        to="/properties/$postId"
-        params={{ postId: id }}
+        to="/properties/$id"
+        params={{ id }}
         className="flex flex-col h-full"
       >
         <div className="relative overflow-hidden group">
